@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <script src="src/scripts/bisection.js"></script>
     <title>Bisection Method</title>
     <h1>Bisection Method</h1>
 </head>
@@ -11,5 +12,19 @@
         <input id="low">
         <p>Enter the second estimation:</p>
         <input id="up" type="text">
+        <br>
+        <button type="button" onclick="result()">Result</button>
+        <table id="output">
+            <tr>
+                <td>Iterations</td>
+                <td>a</td>
+                <td>f(a)</td>
+                <td>b</td>
+                <td>f(b)</td>
+                <td>c</td>
+                <td>f(c)</td>
+                <td>+/-</td>
+            </tr>
+        </table>
     </div>
 </body>
