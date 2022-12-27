@@ -1,8 +1,41 @@
 <!DOCTYPE html>
+<style>
+    html, body{
+        font-family: 'Raleway', sans-serif;
+        padding: 1em 2em;
+        font-size: 18px;
+        background: #222;
+        color: #aaa;
+        align-items: center;
+        margin: 0 180px;
+    }
+    input{
+        padding: auto;
+        border-radius: 5px;
+        margin: 0 10px;
+        width: 250px;
+        box-sizing: border-box;
+        height: 30px;
+    }
+    .button{
+        background-color: black;
+        text-align: center;
+        transition-delay: 0.1s;
+        color: aliceblue;
+        border-radius: 10%;
+        width: 70px;
+        height: 30px;
+    }
+    .button:hover{
+        background-color: antiquewhite;
+        color: black;
+}
+</style>
 <head>
-    <script src="src/scripts/bisection.js"></script>
+    <script src="scripts/bisection.js"></script>
     <title>Bisection Method</title>
     <h1>Bisection Method</h1>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div>
@@ -13,18 +46,9 @@
         <p>Enter the second estimation:</p>
         <input id="up" type="text">
         <br>
-        <button type="button" onclick="result()">Result</button>
-        <table id="output" border="1">
-            <tr>
-                <td>Iterations</td>
-                <td>a</td>
-                <td>f(a)</td>
-                <td>b</td>
-                <td>f(b)</td>
-                <td>c</td>
-                <td>f(c)</td>
-                <td>+/-</td>
-            </tr>
-        </table>
+        <p>Enter the tolerance:</p>
+        <input id="tolerance" type="text"><br/><br/>
+        <button class="button" onclick="result()">Result</button>
+        <p id = "output"></p>
     </div>
 </body>
