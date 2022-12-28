@@ -30,6 +30,13 @@
         background-color: antiquewhite;
         color: black;
 }
+    .tabla{
+        background-color: grey;
+        width: 100%;
+        text-align: center;
+        color: black;
+        column-rule: 5em;
+    }
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
@@ -50,6 +57,9 @@
         <p>Enter the tolerance:</p>
         <input id="tolerance" type="text"><br/><br/>
         <button class="button" onclick="result()">Result</button>
+        <p>To generate the whole table click:</p>
+        <button class="button" onclick="result2()">Generate</button>
         <p id = "output"></p>
+        <table id="tables" class="tabla" border="1px"></table>
     </div>
 </body>
